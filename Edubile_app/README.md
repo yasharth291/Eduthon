@@ -18,10 +18,10 @@ either connect your phone or make virtual device (tested in pixel 2 XL)
 ## Step 6
 first create flutter project and the paste the assets folder there and replace all the files in lib with the given lib files replace the pubspec.yaml file as well
 
-## Step 6
+## Step 7
 run the pubspec.yaml file by clicking pubget
 
-## Step 7
+## Step 8
 run main.dart and your application is ready
 
 

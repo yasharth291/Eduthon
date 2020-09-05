@@ -44,13 +44,17 @@ Our mathematical model of finding the attentivity of a student by considering th
 
 <img src="./Smart Attendence System/eye2.png">
 
+From the graphical representation of several test data, we concluded inattentiveness tends to peak at thresh = 0.25 
+
 <img src="./Smart Attendence System/eye3.jpg">
 
 # Features we would like to further add that wasn't possible to add within 2 days:
 
-Livestream and it's archive feature along with storing pdfs, and other backend work was not possible as it takes more time than 2 days.
+Livestream and it's archive feature along with storing pdfs, and other backend work was not possible as it takes more time than 2 days. We would integrate the Attentiveness Predictor as a module to our Android.
 
 # Our learnings from this Hackathon
 
 Time management and Work distribution were among the most important things that we learned from this hackathon (specifically from the challenges faced).
 Use of Git LFS for storing larger files was a new learning as we never encounter this problem before.
+
+In order to overcome the challenge of calculating time of very small time intervals, we used a time multiplier. Further mathematics can be found in the documentation of the code.

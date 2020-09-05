@@ -1,3 +1,7 @@
 # Content Management System integrated with Smart Attendence System
 
-This CMS will be used in the form of an android app to manage assignments, pdfs, livestreams of lectures and achives of previous lectures along with a smart attendence system implemented using OpenCV.
+This CMS will be used in the form of an android app to manage assignments, pdfs, livestreams of lectures,
+archives of previous lectures along with a smart attendence system implemented using OpenCV. 
+
+A test file is also included in the repo.
+

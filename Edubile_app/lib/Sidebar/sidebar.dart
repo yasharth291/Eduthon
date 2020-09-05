@@ -68,7 +68,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
               Expanded(
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  color: const Color(0xFF262AAA),
+                  color: Color.fromRGBO(126, 46, 132, 1),
                   child: Column(
                     children: <Widget>[
                       SizedBox(
@@ -87,10 +87,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                           ),
                         ),
                         leading: CircleAvatar(
-                          child: Icon(
-                            Icons.perm_identity,
-                            color: Colors.white,
-                          ),
+                          child: Image.asset("assets/student.png"),
                           radius: 40,
                         ),
                       ),
@@ -122,7 +119,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                         title: "My Courses",
                         onTap: () {
                           onIconPressed();
-                          BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.MyOrdersClickedEvent);
+                          BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.MyCoursesClickedEvent);
                         },
                       ),
                       MenuItem(
@@ -159,12 +156,12 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                     child: Container(
                       width: 35,
                       height: 110,
-                      color: Color(0xFF262AAA),
+                      color: Color.fromRGBO(126, 46, 132, 1),
                       alignment: Alignment.centerLeft,
                       child: AnimatedIcon(
                         progress: _animationController.view,
                         icon: AnimatedIcons.menu_close,
-                        color: Color(0xFF1BB5FD),
+                        color: Colors.white,
                         size: 25,
                       ),
                     ),

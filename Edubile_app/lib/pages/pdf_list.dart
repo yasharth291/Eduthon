@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'pdf.dart';
 class pdflist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

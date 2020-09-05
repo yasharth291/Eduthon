@@ -1,4 +1,4 @@
-# Steps to run the attendence system in your local machine
+# Steps to run the Mobile app of CMS in your local machine (Edubile)
 
 ## Step 1
 Clone the Git Repo (Eduthon) to your system.

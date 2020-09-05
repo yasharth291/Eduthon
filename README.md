@@ -34,7 +34,7 @@ At the same time, it is also observed that all the learning resource are not ava
 # Challenges Experienced:
 
 Front End taking longer than usual and is causing the project to slow down as a result.
-Couting the time for which the student was not attentive was a big challenge as the time was in very small intervals.
+Counting the time for which the student was not attentive was a big challenge as the time was in very small intervals.
 
 # Our Accomplishments that we are proud of:
 

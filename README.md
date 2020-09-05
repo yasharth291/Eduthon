@@ -59,7 +59,7 @@ Use of Git LFS for storing larger files was a new learning as we never encounter
 
 In order to overcome the challenge of calculating time of very small time intervals, we used a time multiplier. Further mathematics can be found in the documentation of the code.
 
-# link for ppt
+# link for ppt video
 https://drive.google.com/file/d/1VILDrLdEQ2re-R01D5A6568z8kkIKxLS/view?usp=drivesdk
 
 # link for working app video

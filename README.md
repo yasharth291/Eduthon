@@ -1,5 +1,5 @@
 ## Eduthon 2020
-IIIT lucknow Eduthon project 
+IIIT Lucknow Eduthon project 
 Team Name: The Bug Stops Here
 
 # Team Members:

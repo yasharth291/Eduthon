@@ -1,19 +1,19 @@
-## Eduthon 2020
+# Eduthon 2020
 IIIT lucknow Eduthon project 
 Team Name: The Bug Stops Here
 
-# Team Members:
+## Team Members:
 
 1) Yasharth Dubey
 2) Gourab Chakraborty
 3) Divyansh Tripathi
 4) Shresth Bharadia
 
-# Project Title
+## Project Title
 
 Classroom App with built-in Content Management System (CMS), Live Stream / Chat and Smart Attendence System
 
-# What does this Project do?
+## What does this Project do?
 
 We are creating a content management system, that Stores the pdf, assignments , archives of livestreams in an organised manner. Provides insights of students attentiveness, attendence in the livestreams and also supports different video resolutions of the livestreams and its archives.
 
@@ -21,22 +21,22 @@ This Video Based Content Management System which will support livestreaming and 
 
 It will support all the features that current industry leaders in the domain provide like live chat, email as well as push notification delivery of meetings. In addition to that, our hack tries to solve one fundamental problem: Attentiveness of the students via various computer vision and image processing algorithm so that teacher can check the attentiveness of student without seeing each and every students cam.
 
-# Who did we create this project for?
+## Who did we create this project for?
 
 We created this project keeping both the interest of Teachers and Students in mind. Students getter better access to resources and Teachers are able to make sure students are attentive in class.
 
-# Our inspiration for the Project
+## Our inspiration for the Project
 
 It is difficult for the teachers, who are not as tech savvy, to simultaneously teach and monitor each and every student via the online mode. As a result, we can see in the current Indian Online Education scene that many student don't properly take notes/ listen to lectures.
 Many students open other apps/ tabs on their computer or phones or perform other tasks(like sleeping) while the lecture is running in the background.
 At the same time, it is also observed that all the learning resource are not available in one place. A specific example would be: Attending Lectures in Google Meet, Getting Notes/PDFs, Submitting Assignments,tec in Google Classroom, Getting Archives of Lectures in Google Drive. 
 
-# Challenges Experienced:
+## Challenges Experienced:
 
 Front End taking longer than usual and is causing the project to slow down as a result.
 GitHub's restriction on individual file size to 50 MB causing problem in pushing commits as out BAT file is of 95 MB.
 
-# Our Accomplishments that we are proud of:
+## Our Accomplishments that we are proud of:
 
 Our mathematical model of finding the attentivity of a student by considering the eye as the ROI.
 
@@ -44,11 +44,11 @@ Our mathematical model of finding the attentivity of a student by considering th
 
 <img src="./Smart Attendence System/eye2.png">
 
-# Features we would like to further add that wasn't possible to add within 2 days:
+## Features we would like to further add that wasn't possible to add within 2 days:
 
 Livestream and it's archive feature along with storing pdfs, etc wasnt possible as it would require taking server space.
 
-# Our learnings from this Hackathon
+## Our learnings from this Hackathon
 
 Time management and Work distribution were among the most important things that we learned from this hackathon (specifically from the challenges faced).
 Use of Git LFS for storing larger files was a new learning as we never encounter this problem before.

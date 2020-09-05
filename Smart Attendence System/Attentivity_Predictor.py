@@ -21,13 +21,15 @@ predict = dlib.shape_predictor("C:/Users/GOURAB/OneDrive/Desktop/Drowsiness_Dete
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_68_IDXS["right_eye"]
 cap=cv2.VideoCapture(0)
 flag=0
-inattentive_time=0 
+inattentive_time=0
+attentive_time = 0 
 lecture_time=time.time() #starts count of lecture time
 while True:
 	ret, frame=cap.read()
 	frame = imutils.resize(frame, width=450)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	subjects = detect(gray, 0)
+	start=time.time()
 	for subject in subjects:
 		shape = predict(gray, subject)
 		shape = face_utils.shape_to_np(shape)   #converting to NumPy Array
@@ -41,10 +43,11 @@ while True:
 		cv2.drawContours(frame, [leftEyeHull], -1, (0, 255, 0), 1)
 		cv2.drawContours(frame, [rightEyeHull], -1, (0, 255, 0), 1)
 		end=0
+		
 		if ear < thresh:
 			flag += 1
 			print (flag)
-			start=time.time()
+			
 			if flag >= frame_check:
 				# calculate time blocks for inattentive time and sum
 				
@@ -54,18 +57,23 @@ while True:
 					cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 			end=time.time()
 			end = end - start # end here counts inattentive time for each instance
+			start = time.time()
 			inattentive_time = inattentive_time + end  
 				#print ("Drowsy")
 				
 		else:
 			flag = 0
+			end=time.time()
+			end = end - start
+			start = time.time()
+			attentive_time = attentive_time + end
 	cv2.imshow("Frame", frame)
 	key = cv2.waitKey(1) & 0xFF
-	if key == ord("q"):
+	if key == ord("q"):   #loop breaks
 		break
 current_time = time.time()
 lecture_time = current_time - lecture_time   #gives net lecture time, substract inattentive time to get attentive... calculate attentive percentage.
-attentive_time= lecture_time - inattentive_time
+#attentive_time= lecture_time - inattentive_time
 attendence_percentage= ( attentive_time / lecture_time ) * 100
 print("Inattentivity is:", inattentive_time ,"\n")
 print("Lecture Time is:", lecture_time ,"\n")

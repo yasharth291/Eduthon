@@ -44,6 +44,8 @@ Our mathematical model of finding the attentivity of a student by considering th
 
 <img src="./Smart Attendence System/eye2.png">
 
+<img src="./Smart Attendence System/eye3.jpg">
+
 # Features we would like to further add that wasn't possible to add within 2 days:
 
 Livestream and it's archive feature along with storing pdfs, and other backend work was not possible as it takes more time than 2 days.

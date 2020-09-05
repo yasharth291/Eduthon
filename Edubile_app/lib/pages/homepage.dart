@@ -1,3 +1,4 @@
+import 'package:eduthon/pages/Semester.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../bloc.navigation_bloc/navigation_bloc.dart';
@@ -25,7 +26,8 @@ class home_State extends State<home> {
   static int id6 = 6;
   static int id7 = 7;
   static int id8 = 8;
-  Widget clipOvalImage(String imageVal,String id)
+  int id = 1;
+  Widget clipOvalImage(String imageVal,int id)
   {
     return ClipOval(
       child: Container(
@@ -38,7 +40,14 @@ class home_State extends State<home> {
           ),
         ),
         child: FlatButton(onPressed: () async{
-
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context){
+                  return semester(n : id);
+                }
+            ),
+          );
         }
         ),
         ),
@@ -49,10 +58,18 @@ class home_State extends State<home> {
     return Container(
       width: 100,
       child: Card(
-        child: Wrap(
-          children: <Widget>[
-            Image.asset(imageVal),
-          ],
+        child: Container(
+          padding: EdgeInsets.all(0.0),
+      width: 70,
+      height: 70,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage(imageVal)
+        ),
+      ),
+          child: FlatButton(onPressed: () async{
+          }
+      ),
         ),
       ),
     );
@@ -68,6 +85,7 @@ class home_State extends State<home> {
                       Container(
                         height: 140,
                         child: Image.asset("assets/logo.png"),
+
                       ),
                       SizedBox(
                         height: 10,
@@ -78,7 +96,8 @@ class home_State extends State<home> {
                           boxFit: BoxFit.fitHeight,
                           images:[
                             AssetImage('assets/file/LEFT2.png'),
-                            AssetImage('assets/file/MID.png')
+                            AssetImage('assets/file/MID.png'),
+                            AssetImage('assets/file/LEFT1.png')
                           ],
                           autoplay: true,
                           autoplayDuration: Duration(milliseconds: 3000),
@@ -99,7 +118,7 @@ class home_State extends State<home> {
                      Text(
                        "Semesters",
                        style: TextStyle(
-                         color: Color.fromRGBO(80, 90, 175, 1),
+                         color: Color.fromRGBO(126, 46, 132, 1),
                          fontWeight: FontWeight.bold,
                          fontSize: 25.0,
                        ),
@@ -113,20 +132,20 @@ class home_State extends State<home> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      clipOvalImage("assets/Semester/1.png",id1.toString()),
-                      clipOvalImage("assets/Semester/2.png",id2.toString()),
-                      clipOvalImage("assets/Semester/3.png",id3.toString()),
-                      clipOvalImage("assets/Semester/4.png",id4.toString()),
+                      clipOvalImage("assets/Semester/1.png",id1),
+                      clipOvalImage("assets/Semester/2.png",id2),
+                      clipOvalImage("assets/Semester/3.png",id3),
+                      clipOvalImage("assets/Semester/4.png",id4),
                     ],
                   ),
                   SizedBox(height: 15,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      clipOvalImage("assets/Semester/5.png",id5.toString()),
-                      clipOvalImage("assets/Semester/6.png",id6.toString()),
-                      clipOvalImage("assets/Semester/8.png",id7.toString()),
-                      clipOvalImage("assets/Semester/7.png",id8.toString()),
+                      clipOvalImage("assets/Semester/5.png",id5),
+                      clipOvalImage("assets/Semester/6.png",id6),
+                      clipOvalImage("assets/Semester/8.png",id7),
+                      clipOvalImage("assets/Semester/7.png",id8),
                     ],
                   ),
                   SizedBox(
@@ -141,7 +160,7 @@ class home_State extends State<home> {
                         Text(
                           "Edubile Specials",
                           style: TextStyle(
-                            color: Color.fromRGBO(80, 90, 175, 1),
+                            color: Color.fromRGBO(126, 46, 132, 1),
                             fontWeight: FontWeight.bold,
                             fontSize: 25.0,
                           ),
